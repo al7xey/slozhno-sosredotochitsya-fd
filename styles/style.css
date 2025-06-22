@@ -207,7 +207,7 @@
 
 .footer {
   display: grid;
-  height: 100vh;
+  min-height: 667px;
 }
 
 .footer__title {
@@ -291,10 +291,6 @@
     grid-column: 1;
   }
 
-  .content-section--split > card-title--highlight {
-    grid-column: 2;
-  }
-
   .content-section--split > .card-list {
     grid-column: 2;
   }
@@ -323,7 +319,7 @@
   
   .gallery-grid {
     display: grid;
-    height: 780px;
+    max-height: 100vw;
     grid-template-areas:
       "sunset sunset ice-cream"
       "tape books ice-cream"
@@ -422,10 +418,6 @@
   .content-section--split > .card-list {
     margin-left: -5px;
     min-width: 650px;
-  }
-
-  .gallery-grid {
-    height: 1048px;
   }
 
   .footer {
