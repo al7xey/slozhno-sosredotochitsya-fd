@@ -4,17 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta mame="color-theme" content="dark light">
+    <meta name="color-theme" content="dark light">
     <title>Сложно сосредоточиться</title>
     <script src="./scripts/script.js"></script>
+    <link rel="stylesheet" href="./styles/globals.css">
     <link rel="stylesheet" href="./fonts/fonts.css">
-    <link rel="stylesheet" href="./styles//variables.css">
+    <link rel="stylesheet" href="./styles/variables.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/dark.css">
-    <link rel="stylesheet" href="./styles/light.css"> 
-    <link rel="stylesheet" href="./styles/globals.css">
+    <link rel="stylesheet" href="./styles/light.css">
     <link rel="icon" href="./images/favicon.svg" type="image/svg">
     <link rel="icon" href="./images/favicon.ico" type="image/ico">
+    <link rel="icon" href="./images/mobile-icon.png" type="image/png">
   </head>
   <body class="page">
     <header class="header decorated-zone">
@@ -48,14 +49,18 @@
       <h1 class="header__title">
         no focus
       </h1>
-      <p class="header__text card-title--highlight">
-        Что делать, когда не можешь делать ничего<br>
-        Или почему нам так сложно сконцентрироваться, особенно когда очень надо
-      </p>
+      <div class="header__text card-title--highlight">
+        <p>
+          Что делать, когда не можешь делать ничего
+        </p>
+        <p>
+          Или почему нам так сложно сконцентрироваться, особенно когда очень надо
+        </p>
+      </div>
     </header>
     <main class="main">
-      <ul class="content-list">
-        <li class="content-section content-section--split">
+      <section class="content-list">
+        <div class="content-section content-section--split">
           <h2 class="section-title section-title--left">
             Почему сосредоточиться так сложно
           </h2>
@@ -78,9 +83,9 @@
               </p>
             </li>
           </ul>
-        </li>
+        </div>
         
-        <li class="content-section content-section--single">
+        <div class="content-section content-section--single">
           <h2 class="section-title">
             Что снижает концентрацию внимания?
           </h2>
@@ -111,19 +116,14 @@
               </p>
             </li>
           </ul>
-        </li>
+        </div>
         
-        <li class="content-section content-section--split">
-          <h2 class="section-title section-title--left">
+        <div class="content-section content-section--split">
+          <h2 class="section-title">
             Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх секунд)
           </h2>
-
           <ul class="card-list">
-            <li class="card-title-item">
-              <h3 class="card-title card-title--highlight">
-                5 простых (на самом деле не очень) советов
-              </h3>
-            </li>
+            <h3 class="card-title card-title--highlight">5 простых (на самом деле не очень) советов</h3>
             <li class="card-item">
               <h3 class="card-title card-title--highlight card-title--light">
                 Представьте небо и облака
@@ -165,27 +165,27 @@
               </p>
             </li>
           </ul>
-        </li>
-      </ul>
+        </div>
+      </section>
       
       <h3 class="gallery-title card-title--highlight">
         А можно в картинках?
       </h3>
       <ul class="gallery-grid">
         <li>
-          <img class="gallery-image" src="./images/sunset.png" alt="sunset" loading="lazy">
+          <img class="gallery-image" src="./images/sunset.png" alt="закат" loading="lazy">
         </li>
         <li>
-          <img class="gallery-image" src="./images/ice-cream.png" alt="ice-cream" loading="lazy">
+          <img class="gallery-image" src="./images/ice-cream.png" alt="мороженое" loading="lazy">
         </li>
         <li>
-          <img class="gallery-image" src="./images/tape.png" alt="tape" loading="lazy">
+          <img class="gallery-image" src="./images/tape.png" alt="лента" loading="lazy">
         </li>
         <li>
-          <img class="gallery-image" src="./images/books.png" alt="books" loading="lazy">
+          <img class="gallery-image" src="./images/books.png" alt="книги" loading="lazy">
         </li>
         <li>
-          <img class="gallery-image" src="./images/street.png" alt="street" loading="lazy">
+          <img class="gallery-image" src="./images/street.png" alt="улица" loading="lazy">
         </li>
       </ul>
     </main>

@@ -1,61 +1,27 @@
 :root.theme-light {
-  --accent-color: #FF8DCB;
-  --bg-color: #FFFFFF;
-  --h1-color: #FFC2E6;
-  --text-color: #353430;
-  --bg-image: url(/images/cover-image-light.png);
-  --text-family: 'IBM Plex Mono', monospace;
+  --color-accent: #FF8DCB;
+  --color-surface-primary: #FFF1F7; 
+  --color-text-accent: #FFC2E6;    
+  --color-text-primary: #353430;   
+  --color-title-accent: #353430;
+  --color-title-primary: #353430;
+  --button-primary-color: #353430;     
+  --button-primary-color-alpha: rgba(53, 52, 48, 0.4); 
+  --image-surface-primary: url(../images/cover-image-light.png);
+  --rec-display: none;
 }
 
-.theme-light .page {
-  background-color: var(--bg-color);
-  background-image: var(--bg-image);
-  color: var(--text-color);
-}
-
-.theme-light .header__theme-menu-button {
-  color: var(--text-color);
-}
-
-.theme-light .header__theme-menu-button_active {
-  border: 1px solid var(--text-color);
-}
-
-.theme-light .header__theme-menu-button:hover {
-  border: 1px solid rgb(50, 49, 45, 0.4);
-}
-
-.theme-light .header__theme-menu-button:focus {
-  border: none;
-  border-bottom: 1px solid rgb(50, 49, 45);
-}
-
-
-.theme-light .decorated-zone::before,
-.theme-light .decorated-zone::after {
-  border-color: var(--text-color);
-}
-
-.theme-light .header__title,
-.theme-light .footer__title {
-  color: var(--h1-color);
-  text-shadow: 4px 4px 0 var(--accent-color);
-}
-
-.theme-light .section-title {
-  color: var(--text-color);
-}
-
-.theme-light .card-title--highlight {
-  color: var(--text-color);
-  background: var(--accent-color);
-}
-
-.theme-light .link-decor {
-  text-shadow: 1px 1px var(--accent-color);
-  color: var(--text-color);
-}
-
-.theme-light .link-decor:focus {
-  border: 1px solid var(--text-color);
+@media (prefers-color-scheme: light) {
+  :root:not(.theme-dark) {
+    --color-accent: #FF8DCB;
+    --color-surface-primary: #FFF1F7; 
+    --color-text-accent: #FFC2E6;    
+    --color-text-primary: #353430;   
+    --color-title-accent: #353430;
+    --color-title-primary: #353430;
+    --button-primary-color: #353430;     
+    --button-primary-color-alpha: rgba(53, 52, 48, 0.4);
+    --image-surface-primary: url(../images/cover-image-light.png);
+    --rec-display: none;
+  }
 }
